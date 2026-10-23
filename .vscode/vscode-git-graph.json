@@ -1,0 +1,17 @@
+{
+    "includeCommitsMentionedByReflogs": false,
+    "pullRequestConfig": {
+        "provider": "github",
+        "hostRootUrl": "https://github.com",
+        "sourceRemote": "origin",
+        "sourceOwner": "sendychan2018-dotcom",
+        "sourceRepo": "SBB-1",
+        "destRemote": "origin",
+        "destOwner": "sendychan2018-dotcom",
+        "destRepo": "SBB-1",
+        "destProjectId": "",
+        "destBranch": "main",
+        "custom": null
+    },
+    "exportedAt": 1792770143223
+}
