@@ -1,3 +1,6 @@
+import 'package:cloud_firestore/cloud_firestore.dart';
+
+// Representasi data pemain yang disimpan pada koleksi Firestore.
 class PlayerModel {
   final String id;
   final String name;
@@ -19,6 +22,7 @@ class PlayerModel {
     required this.shooting,
   });
 
+  // Mengubah model menjadi map dengan nama field yang dipakai Firestore.
   Map<String, dynamic> toMap() {
     return {
       'name': name,
@@ -32,6 +36,7 @@ class PlayerModel {
     };
   }
 
+  // Membuat model dari dokumen Firestore dan memberi nilai aman untuk field kosong.
   factory PlayerModel.fromMap(String id, Map<String, dynamic> map) {
     return PlayerModel(
       id: id,
